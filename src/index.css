@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+.footer {
+    background-color: rgba(81, 80, 80, 0.4); /* Transparent for blur */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.footer img {
+    width: 34px;
+    height: 34px;
+    transition: all 0.5s ease cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
+    transform-origin: bottom;
+}
+
+.footer img:hover {
+    transform: scale(1.25) translateY(-6px);
+}
+
+.github .cli{
+    background-color: black;
+    padding: 3px;
+}
+
+.note {
+    background: linear-gradient(to bottom,  rgb(255, 179, 87), rgb(255, 153, 28));
+    padding: 4px;
+}
+
+.pdf {
+    background: linear-gradient(to bottom, rgb(255, 65, 78), rgb(255, 25, 40));
+    padding: 4px;
+}
+
+.calender, .mail {
+    background: linear-gradient(to bottom, rgb(105, 94, 255), rgb(66, 52, 255));
+    padding: 4px;
+}
+
+.link {
+    background: linear-gradient(to bottom, rgb(163, 97, 170), rgb(142, 33, 154));
+    padding: 4px;
+}
+
+.spotify {
+    background: linear-gradient(to bottom, rgb(78, 176, 33), rgb(53, 142, 12));
+    padding: 4px;
+}
+
+.icon:hover+.icon,
+.icon:has(+ .icon:hover) {
+        transform: scale(1.1) translateY(-4%);
+} 
+
+/* Custom Red Scrollbar */
+.red-scrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.red-scrollbar::-webkit-scrollbar-track {
+    background: transparent; 
+    border-radius: 4px;
+}
+
+.red-scrollbar::-webkit-scrollbar-thumb {
+    background: rgb(235, 86, 86); 
+    border-radius: 4px;
+}
+
+.red-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #cc0000; 
+}
+
+.note {
+    background-color: black !important;
+}
+
+.Resume {
+    height: 100%;
+}
+
+embed {
+    height: 100%;
+    width: 100%;
+}
