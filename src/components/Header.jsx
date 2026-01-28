@@ -35,10 +35,10 @@ const Header = () => {
       <div className="left flex gap-4 text-white pl-2">
         <img src="/apple.svg" alt="Apple" className="w-4 h-4" />
         <p className='text-xs font-bold'>M Zubair</p>
-        <p onClick={() => window.open('https://github.com/Zubair-OP', '_blank')} className='text-xs cursor-pointer hover:text-[lightseagreen] transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)]'>Github</p>
-        <p onClick={() => window.open('https://linkedin.com/in/muhammad-zubair-24793b34a', '_blank')} className='text-xs cursor-pointer hover:text-[lightseagreen] transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)]'>Linkedin</p>
-        <p onClick={() => window.open('Muhammad_Zubair_CV.pdf', '_blank')} className='text-xs cursor-pointer hover:text-[lightseagreen] transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)]'>Resume</p>
-        <p onClick={() => setWindow({ ...windowState, cli: true })} className='text-xs cursor-pointer hover:text-[lightseagreen] transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)]'>Terminal</p>
+        <p onClick={() => window.open('https://github.com/Zubair-OP', '_blank')} className='text-xs cursor-pointer hover:text-[lightseagreen] transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] hidden sm:block'>Github</p>
+        <p onClick={() => window.open('https://linkedin.com/in/muhammad-zubair-24793b34a', '_blank')} className='text-xs cursor-pointer hover:text-[lightseagreen] transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] hidden sm:block'>Linkedin</p>
+        <p onClick={() => window.open('Muhammad_Zubair_CV.pdf', '_blank')} className='text-xs cursor-pointer hover:text-[lightseagreen] transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] hidden sm:block'>Resume</p>
+        <p onClick={() => setWindow({ ...windowState, cli: true })} className='text-xs cursor-pointer hover:text-[lightseagreen] transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] hidden sm:block'>Terminal</p>
       </div>
       <div className="rite flex gap-4 items-center pr-2">
         <img src="/wifi.svg" alt="Wifi" className="w-4 h-4" />

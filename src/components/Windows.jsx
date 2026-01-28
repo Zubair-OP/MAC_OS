@@ -11,10 +11,10 @@ const Windows = ({ children, name }) => {
     return (
         <Rnd
             default={{
-                width: 490,
-                height: 350,
-                x: 300,
-                y: 100
+                width: window.innerWidth < 640 ? window.innerWidth * 0.9 : 490,
+                height: window.innerWidth < 640 ? window.innerHeight * 0.6 : 350,
+                x: window.innerWidth < 640 ? window.innerWidth * 0.05 : 300,
+                y: window.innerWidth < 640 ? 60 : 100
             }}
         >
             <div className='windows bg-[#060606] rounded-md w-full h-full text-white flex flex-col overflow-hidden shadow-2xl border border-white/10'>

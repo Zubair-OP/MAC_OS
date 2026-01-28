@@ -19,6 +19,13 @@
     transform-origin: bottom;
 }
 
+@media (max-width: 640px) {
+    .footer img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
 .footer img:hover {
     transform: scale(1.25) translateY(-6px);
 }

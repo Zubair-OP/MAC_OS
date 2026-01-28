@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <div className='footer absolute bottom-2 left-1/2 transform -translate-x-1/2 w-fit'>
-      <div className="flex justify-center items-center gap-5 p-3">
+      <div className="flex justify-center items-center gap-3 sm:gap-5 p-2 sm:p-3">
         <img onClick={() => setWindow((state) => ({ ...state, github: true }))} className='icon icon transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] github' src="/github.svg" alt="GitHub" />
         <img onClick={() => setWindow((state) => ({ ...state, note: true }))} className='icon icon transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] note' src="note.svg" alt="Notes" />
         <img onClick={() => window.open('Muhammad_Zubair_CV.pdf', '_blank')} className='icon icon transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] pdf' src="pdf.svg" alt="PDF" />
