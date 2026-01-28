@@ -3,7 +3,7 @@ import Window from './Windows'
 
 const Spotify = () => {
     return (
-        <Window>
+        <Window name="spotify">
             <div className="spotify-window h-full flex items-center justify-center p-4">
                 <iframe
                     data-testid="embed-iframe"

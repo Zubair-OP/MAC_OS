@@ -25,8 +25,9 @@ export const GitCard = ({ data = { id: 1, image: '', title: '', description: '',
 
 
 const Github = () => {
+
   return (
-    <Window>
+    <Window name="github">
       <div className="cards p-1 overflow-y-scroll h-full overflow-x-hidden flex flex-wrap gap-5 justify-center red-scrollbar">
         {data.map((project, idx) => {
           return <GitCard key={idx} data={project} />

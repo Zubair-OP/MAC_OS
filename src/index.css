@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
 .footer {
-    background-color: rgba(81, 80, 80, 0.4); /* Transparent for blur */
+    background-color: rgba(81, 80, 80, 0.4);
+    /* Transparent for blur */
     backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px); /* Safari support */
+    -webkit-backdrop-filter: blur(20px);
+    /* Safari support */
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -21,13 +23,13 @@
     transform: scale(1.25) translateY(-6px);
 }
 
-.github .cli{
+.github .cli {
     background-color: black;
     padding: 3px;
 }
 
 .note {
-    background: linear-gradient(to bottom,  rgb(255, 179, 87), rgb(255, 153, 28));
+    background: linear-gradient(to bottom, rgb(255, 179, 87), rgb(255, 153, 28));
     padding: 4px;
 }
 
@@ -36,7 +38,8 @@
     padding: 4px;
 }
 
-.calender, .mail {
+.calender,
+.mail {
     background: linear-gradient(to bottom, rgb(105, 94, 255), rgb(66, 52, 255));
     padding: 4px;
 }
@@ -53,26 +56,27 @@
 
 .icon:hover+.icon,
 .icon:has(+ .icon:hover) {
-        transform: scale(1.1) translateY(-4%);
-} 
+    transform: scale(1.1) translateY(-4%);
+}
+
 
 /* Custom Red Scrollbar */
-.red-scrollbar::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 5px;
 }
 
-.red-scrollbar::-webkit-scrollbar-track {
-    background: transparent; 
+::-webkit-scrollbar-track {
+    background: transparent;
     border-radius: 4px;
 }
 
-.red-scrollbar::-webkit-scrollbar-thumb {
-    background: rgb(235, 86, 86); 
+::-webkit-scrollbar-thumb {
+    background: rgb(235, 86, 86);
     border-radius: 4px;
 }
 
-.red-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #cc0000; 
+::-webkit-scrollbar-thumb:hover {
+    background: #cc0000;
 }
 
 .note {
@@ -86,4 +90,10 @@
 embed {
     height: 100%;
     width: 100%;
+}
+
+div[name='react-console-emulator'] {
+    font-size: 10px;
+    height: 100%;
+    padding: 1rem;
 }

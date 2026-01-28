@@ -16,7 +16,7 @@ const Note = () => {
             .then(data => setnote(data))
     }, [])
     return (
-        <Window>
+        <Window name="note">
             <div className="note h-full overflow-y-scroll w-full red-scrollbar p-3 text-white/90 text-xs">
                 {note ? <SyntaxHighlighter style={atelierDuneDark}>{note}</SyntaxHighlighter> : <p>...loading</p>}
             </div>
