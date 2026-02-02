@@ -17,10 +17,11 @@ This project mimics the look and feel of the macOS dock and icons using React co
 
 ## 🛠️ Tech Stack
 
-- **React.js**
-- **JavaScript (ES6+)**
-- **HTML5**
-- **CSS3**
+- *React.js*
+- *JavaScript (ES6+)*
+- *HTML5*
+- *CSS3*
+- *TailwindCSS*
 
 ---
 
